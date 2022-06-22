@@ -1,114 +1,170 @@
 <!doctype html>
-<html>
-<body>
+import React from 'react';
+import rdmd from '@readme/markdown';
 
-  <h1>D.K.& L. Dinner House</h1>
-  <p>Hello World</p>
-  <br>
-  <p>This is our Final Phase 1 of our Project Two for Revature.</p>
-  <br>
-  <p>Our team includes the following people.</p>
-  <ul>
-    <li>Lisa Lenhart</li>
-    <li>Dovlet Kossekov</li>
-    <li>Khine Zaw</li>
-  </ul>
-  <h3>Our Project Description</h3>
-  <p>This project includes making an online dinner reservation plus ordering your food
-    ahead of time. Ths new experience is perfect for the couple/family/or friends that 
-    do not have a lot of extra time to stand and wait for their table, and then sit and
-    wait for the waiter to take their order. Then more wait time... And finally, their
-    food arrives. Our guests can also choose to make a table reservation without their
-    food order, if they desire to do so.
-  </p>
-  # Phase 1 
-  <p>For phase 1, our project included the following</p>
-  <ul>
-    <li>Home Page</li>
-    <li>Menu Page / shopping cart & summary of order</li>
-    <li>Reservation Page / Guests can select date and time of reservation</li>
-    <li>Login Page / Create Account if user chooses to do so.</li>
-  </ul>
-  # Technolgies Used
+export default ({ body }) => (
+  <div className="markdown-body">
+    {rdmd(body)}
+  </div>
+);
+
+  
+# D.K.& L. Dinner House
+<p><strong>Hello World,</strong></p>
+<p><strong>This is our Final Phase 1 of our Project Two for Revature.</strong></p>
+<p><strong>This project was designed, developed, and coded by:</strong></p>
 <ul>
-<li>Nodes.js</li>
-<li>Microsoft Visual Studio Code</li>
-<li>Spring Initializer</li>
-<p><strong>dependencies we used for Spring Initializer</strong></p>
-  <ul>
-    <li>MySQL Driver | MySQL JDBC and R2DBC driver</li>
-    <li>Spring Data JPA | Persist data in SQL stores with Java Persistance API Spring Date and Hibernate</li>
-    <li>Spring Web | Build web, RESTFUL, apps using Spring MVC, Apache Tomcat default embedded container</li>
-    <li>Lombock Dev Tool | Java annotation library, helps to reduce boiler plate code</li>
-    <br>
-    <p><strong>The annotations that we used in IntelliJ are:</strong></p>
-    <li>@order</li>
-    <p>Defines the sorting order of an annotated component or bean. It has an optional value arguement 
-      which determined the order of the component; the default value is Ordered.</p>
-      <br>
-    <li>@value</li>
-    <p></p>
-    <li>@Autowired</li>
-    <li>@Bean</li>
-    <li>@Configuration</li>
-    <li>@EnableWebSecurity</li>
-    <li>@PostMapping</li>
-    <li>@RequestBody</li>
-    <li>@RestController</li>
-    <li>@RequestBody</li>
-    <li>@RestController</li>
-    <li>@JsonIgnore</li>
-    <li>@OnDelete</li>
-
-  </ul>
+  <li>Lisa Lenhart</li>
+  <li>Dovletgeldi Kossekov</li>
+  <li>Khine Zaw</li>
+</ul>
+<h3>What is a Restaurant Experience?</h3>
+<p>We created a restaurant experience. This wondrous experience can be described 
+  as the following. It is Friday night and you want to meet your friends at your 
+  favorite restaruant but are tired from the week and do not feel like standing 
+  in line for a table and then having to wait to order your food, and more wait 
+  time to get your food. 
+  
+  Or maybe you want to meet your husband for that romatic dinner but do not feel 
+  like waiting for your table and then waiting for your food as well.
+  
+  The thought of either scenario is exhausting! Now, imagine how life would be 
+  different if you could go online, set your dinner reservation along with 
+  placing your food order! This way, you drive to the restaurant, are seated 
+  right away, and shortly after, your food arrives. 
+  </p>
+  <p><strong>In Summary</strong></p>
+<p>This project includes making an online dinner reservation plus ordering your food
+  ahead of time. Ths new experience is perfect for the couple/family/or friends that 
+  do not have a lot of extra time to stand and wait for their table, and then sit and
+  wait for the waiter to take their order. Then more wait time... And finally, their
+  food arrives. Our guests can also choose to make a table reservation without their
+  food order, if they desire to do so.
 </p>
+<h3>How Restaurant Experience for D.K.& L. Dinner House runs.</h3>
+  <p><strong>The back-end system uses Spring Boot and Hibernate to connect to a MySQL database.</strong></p>
+  <ul>
+    <li>The application deploys onto a Tomcat Server.</li>
+    <li>The middle tier uses Servlet technology for dynamic Web application development.</li>
+    <li>The front-end view uses Angular to make an application that can call server-side components.</li>
+    <li>Passwords are encrypted in Java and securely stored in the database.</li>
+    <li>Postman is an API client that makes it easy for developers to create, share, test and document 
+      APIs. This is done by allowing users to create and save simple and complex HTTP/s requests, 
+      as well as read the</li>
+  </ul>
+  <p><strong>Development server</strong></p>
+  <ul>
+    <li>This project was generated with Angular</li>
+    <li>Run ng serve for a dev server. Navigate to http://localhost:4200/. </li>
+    <li>The app will automatically reload if you change any of the source files.</li>
+    <li>Run ng build to build the project.</li>
+  </ul>
+<p><strong>Phase 1, includes the following</strong></p>
+<ul>
+  <li>Home Page</li>
+  <li>Menu Page  |  Shopping cart & summary of order</li>
+  <li>Reservation Page   |   Guests can select date and time of reservation</li>
+  <li>Login Page   |   Create Account if user chooses to do so.</li>
+</ul>
+<p><strong>Technolgies Used</strong></p>
+<ul>
+<li>Nodes.js  |  version 16.13.0</li>
+<li>Microsoft Visual Studio Code  |  version 1.68.1</li>
 <li>MySQL command Line</li>
 <li>MySQL Workbench</li>
 <li>BootStrap 5.0.1</li>
 <li>Spring Boot</li>
-<li>Angular CLI</li>
+<li>Angular CLI version 14.0.1</li>
 <li>CSS</li>
 <li>html</li>
 <li>Servlets</li>
 <li>Maven</li>
 <li>Tomcat</li>
+<li>Spring Initializer  |  Spring Boot 2.7.0, Maven Project and Java, Packaging JAR Java 17</li>
 <br>
-# IDE Used
+<p><strong>Dependencies we used for Spring Initializer</strong></p>
 <ul>
-  <li>Microsoft Visual Code</li>
-  <li>IntelliJ</li>
+  <li>MySQL Driver | MySQL JDBC and R2DBC driver</li>
+  <li>Spring Data JPA | Persist data in SQL stores with Java Persistance API Spring Date and Hibernate</li>
+  <li>Spring Web | Build web, RESTFUL, apps using Spring MVC, Apache Tomcat default embedded container</li>
+  <li>Lombok Dev Tool | Java annotation library, helps to reduce boiler plate code</li>
   <br>
-# API Used
+  <!--:sparkles: :owlbert-reading:-->
+  <p><strong>The annotations that we used in IntelliJ are:</strong></p>
+  <li><strong>@order</strong></li>
+  <p>Defines the sorting order of an annotated component or bean. It has an optional value arguement 
+    which determined the order of the component; the default value is Ordered.</p>
+  <li><strong>@value</strong></li>
+  <p>This annotation is used at the field or method contructor parameter level and it indicates a default 
+    value for the affected aregument. It is commonly used for injecting values into configuration variables.</p>
+  <li><strong>@Autowired</strong></li>
+  <p>Spring provides annotation-based auto-wiring by providing @Autowired annotation. It is used to autowire 
+    spring beans on setter methods, instance variables, and constructor. When we use @Autowired annotation, 
+    the spring container auto-wires the bean by matching data-type.</p>
+  <li><strong>@Bean</strong></li>
+  <p>It is a method-level annotation. It is an alternative of XML <bean> tag. It tells the method to produce a bean to be managed by Spring Container.
+  </p>
+  <li><strong>@Configuration</strong></li>
+  <p> It is a class-level annotation. The class annotated with @Configuration used by Spring Containers as a source of bean definitions.
+  </p>
+  <li><strong>@EnableWebSecurity</strong></li>
+  <p>This allows Spring to find (its's a @Configuration and therfore, @Component) and automatically apply the class to the global WebSecurity.</p>
+  <li><strong>@PostMapping</strong></li>
+  <p>PostMapping annotation maps HTTP POST requests onto specific handler methods.</p>
+  <li><strong>@RequestBody</strong></li>
+  <p>Is applicable to handler methods of Spring controllers. This annotation indicates that Spring should deserialize a request body into an object.</p>
+  <li><strong>@RestController</strong></li>
+  <p>RestController is used for making restful web services with the help of the RestController annotation.This annotation is used at the class level 
+    and allows the class to handle the requests made by the client.</p>
+  <li><strong>@JsonIgnore</strong></li>
+  <p>The JsonIgnore annotation is used to ignore the logical property used in serialization and deserialization. This annotation is used at setters, 
+    getters, or fields. If you add JasonIgnore to a field or its getter method, the field is not going to be serialized.</p>
+  <li><strong>@OnDelete</strong></li>
+  <p>The OnDelete decides whether deleting an entry from database will delete the rows represented by joined sub class or not.</p>
+</ul>
+</p>
+<p><strong>IDE Used</strong></p>
 <ul>
-  <li>The Meal DB</li>
-  <li>Postman</li>
+<li>Microsoft Visual Code</li>
+<li>IntelliJ</li>
+<p><strong>API Used</strong></p>
+<ul>
+<li>The Meal DB</li>
+<li>Postman - used for testing</li>
+</ul>
+<p><strong>Logo Creation</strong></p>
+<ul>
+<li>The Logo Makr  |  https://www.logomakr.com/app/4OXFof</li>
+</ul>
+<p><strong>Original Images</strong></p>
+<ul>
+<p>The original images that were picked for our project came from 
+  Pexels | At the time of writing this README.md file, these photos 
+  were not inserted. https://www.pexels.com/search/fine dining food/. 
+  We ended up using the photos that were stock photos in 'The Meal DB' 
+  API due to time constraints.</p>
+</ul>
+<p><strong>Color Palette Wheel</strong></p>
+<ul>
+<p>We used <strong>Adobe Color Wheel Palette</strong>to create our color scheme</p>
+<p><strong>Colors Scheme</strong></p>
+<li>#04030F</li>
+<li>#362417</li>
+<li>#92817A</li>
+<li>#DD7230</li>
 </ul>
 <br>
-# Logo Creation
-<ul>
-  <li>The Logo Makr | https://www.logomakr.com/app/4OXFof</li>
-</ul>
-# Original Images
-<ul>
-  <p>The original images that were picked for our project came from 
-    Pexels | At the time of writing this README.md file, these photos 
-    were not inserted. https://www.pexels.com/search/fine dining food/</p>
-</ul>
-# Color Palette Wheel
-<ul>
-  <p>We used Adobe Color Wheel Palette to create our color scheme</p>
-  <p>We used the following colors:</p>
-  <li>#04030F</li>
-  <li>#362417</li>
-  <li>#92817A</li>
-  <li>#DD7230</li>
-</ul>
-
-<NGZorro-antd></NGZorro-antd>#//
-<li></li>
+<p><strong>All of our technolgies that we used were open-source and community editions (free to use).</strong></p>
 
 
-</ul>
+
+# https://github.com/CodeFlareLisa/expert-octo-giggle
+# https://github.com/dovletg/restaurantExp
+# https://github.com/kzaw7/giggledb
+  
+ 
+  
+<!--<NGZorro-antd></NGZorro-antd>#//-->
 <html lang="en">
 <head>
   <meta charset="utf-8">
